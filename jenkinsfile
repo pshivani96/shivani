@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo "sudo python python1.py"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "sayali"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                //
+            }
+        }
+   }
+}

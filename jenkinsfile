@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "sayali"
+                sh 'sudo docker build -t myimage:v1 ."
             }
         }
         stage('Deploy') {
             steps {
-                echo "hi"
+                sh 'sudo docker -name yt myimage:v1'
             }
         }
    }
